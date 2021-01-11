@@ -1,0 +1,162 @@
+.restaurants-bloc {
+    background-color:$color-seven;
+    align-items:center;
+    &__element {
+        margin: 3rem 0rem 1.5rem 1.2rem;
+        @include tablette {//media query
+            margin: 2rem 0rem 1.5rem 1.8rem;
+        }
+    }
+    &___typographie {
+        align-self:flex-start;
+    }
+    &__menu {
+        @include laptop-MDPI {
+            display: flex;
+            flex-direction: row;
+            margin: 0rem 1.8rem 4rem 1.8rem;
+        }
+    }
+}
+
+.menu-bloc {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:93%;
+    @include divMenuSettings;
+    border-radius: $radius-restaurant;
+    overflow: hidden;
+    height: 65vw;
+    @include tablette {//media query
+        height:65vw;
+    }
+    @include big-tablette {//
+        height: 56vw;
+    }
+    @include laptop-MDPI{
+        height: 36vw;
+        width: 50%;
+        margin: 0rem 2rem 0rem 0rem;
+    }
+    @include laptop-HIDPI {//
+        margin: 0rem 2rem 0rem 0rem;
+    }
+    @include desktop {//
+        height: 29vw;
+        margin: 0rem 2rem 0rem 0rem;
+    }
+    a{
+        @include aHyperlien;
+    }
+    &__image {
+        width:100%;
+        height: 63vw;
+        border-radius: $radius-restaurant $radius-restaurant 0 0;
+        margin: -3.5rem 1rem 0rem 0rem;
+        @include tablette {//media query
+            height:62vw;
+            margin: -3.5rem 2rem 0rem 0rem;
+        }
+        @include big-tablette {//
+            margin: -8.5rem 2rem 0rem 0rem;
+        }
+        @include laptop-MDPI {
+            width: 100%;
+            height: 40vw;
+            padding: 8.5rem 0rem 0rem 0rem;
+        }
+        @include laptop-HIDPI{
+            height: 40vw;
+            padding: 8.5rem 0rem 0rem 0rem;
+        }
+        @include desktop {//
+            height: 40.23vw;
+            margin: -17rem 0rem 0rem 0rem;
+            padding: 0;
+        }
+    }
+    &__images {
+        width:105%;
+        height: 87vw;
+        border-radius: $radius-restaurant $radius-restaurant 0 0;
+        margin: -9.5rem 0rem 0rem 0rem;// pour regler image centrer
+        @include tablette {//media query
+            width: 100%;
+            //height: 91.2vw;
+            margin: -15.5rem 3rem 0rem 0rem;
+        }
+        @include big-tablette {// tablette ipad 12.9 inch
+            margin: -24.5rem 3rem 0rem 0rem;
+        }
+        @include laptop-MDPI {// laptop
+            width: 100%;
+            height: 60vw;
+            padding: 8.5rem 0rem 0rem 0rem;
+        }
+        @include laptop-HIDPI {// laptop
+            height: 57.8vw;
+            padding: 8.5rem 0rem 0rem 0rem;
+        }
+        @include desktop{
+            height: 45vw;
+            margin: -22rem 0rem 0rem 0rem;
+            padding: 0;
+       }
+    }
+    &__element {
+        @include nouveauté;
+        @include tablette {//media query tablette ipad
+            padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+            margin: -24rem 0rem 0rem 35rem;
+        }
+        @include medium-tablette {//tablette medium ipad inch 10.5
+            margin: -26rem 0rem 0rem 38rem;
+        }
+        @include big-tablette {//ipad 12.9 inch
+            margin: -29rem 0rem 0rem 48rem;
+        }
+        @include laptop-MDPI{//
+            margin: -22rem 0rem 0rem 26rem;
+        }
+        @include laptop-HIDPI {//
+            margin: -25rem 0rem 0rem 31rem;
+        }
+        @include desktop {//
+            margin: -25rem 0rem 0rem 37rem;
+        }
+    }
+    &--typographie {
+        @include nouveaute-text;
+        @include tablette {//media query
+            font-size: 1.2em;
+        }
+        @include laptop-MDPI {
+            font-size: 1.4em;
+        }
+    }
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    &__element {
+        display:flex;
+        flex-direction: column;
+        margin: 0.5rem 0rem 0rem 0.8rem;
+        background-color: $color-secondary;
+    }
+    &--typographie{
+    @include tablette {//media query
+        font-size: 1.2em;;
+    }
+        font-weight: bold;
+        span {
+            font-weight: normal;
+            margin: 0.2rem 0rem -0.7rem 0rem;
+        }
+    }
+}
+ 

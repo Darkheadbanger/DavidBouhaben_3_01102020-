@@ -1,0 +1,67 @@
+@mixin policeRoboto ($police: $font-custom){
+    font-family: $font-custom, sans-serif;
+}
+
+@mixin inset-shadow ($coulour: $color-shadow) {
+    box-shadow: inset 0 2px 2px $color-shadow;
+}
+
+@mixin divMenuSettings{
+    margin: 0 0 1.5rem 0;
+    padding: 0 0 2rem 0rem;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2),
+    0 6px 20px 0 rgba(0,0,0,0.19) !important;
+    background: $color-secondary;
+}
+
+@mixin margin-div-primary {
+    margin: 0 0 1.5rem 0;
+}
+
+@mixin aHyperlien {
+    text-decoration: none;
+    color: $color-primary;
+}
+
+@mixin dot {
+    float: left;
+    background: $color-dot;
+    border-radius: 50px;
+    height: 39px;
+    padding: 2px 0px 0px 6px;
+    margin: -0.2rem 0 0 -7px;
+    width: 3vh;
+    height: 3vh;
+    position: absolute;
+    font-size: 0.9em;
+    color: $color-secondary;
+}
+
+@mixin titre {
+    align-self: flex-start;
+    margin: 3rem 0rem 1.5rem 1.2rem;
+}
+
+@mixin titreMenu {
+    font-style: italic;
+    font-size: 2em;
+}
+
+@mixin nouveauté {
+    background: $color-nouveaute;
+    position: absolute;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    margin: -10.2rem 0rem 0rem 15rem;
+}
+
+
+@mixin nouveaute-text ($coulour : $color-nouveaute-text) {
+    color: $color-nouveaute-text;
+    font-weight: bold;
+}
+
+@mixin coeur {
+    font-weight: normal;
+    color:$color-heart;
+    font-size: 1.33em;;
+}

@@ -1,0 +1,106 @@
+/*keyframes pour spinner*/
+@keyframes spinner {
+    to {
+      transform: rotateZ(360deg);
+    }
+}
+
+/* keyframes pour que la page s'ouvre après spinner*/
+@keyframes body-all {
+	from {
+		transform: translateX(-999999px);
+	}
+	to { 
+		transform: translateX(0);
+	}
+}
+
+//Pour slider la coche a droite du menu
+@keyframes slide { 
+    from {
+		transform: translateX(100%);
+		color: $color-secondary;
+    }
+    to {
+		transform: translateX(0);
+		
+    }
+}
+
+@keyframes slide-euro {
+	from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes menu__item {
+    from {
+        transform: translateY(10%);
+        //transform: translateY(0);
+        opacity: 0;
+    }
+    
+    to { 
+        transform: translateY(0);
+        //transform: translateY(-40%);  
+    } 
+}
+
+//animation apparition du menu
+//monte un peu avec opcaity de transperent a block tres rapidement
+@keyframes menu__item {
+    from {
+        transform: translateY(20%);
+        //transform: translateY(0);
+        opacity: 0;
+    }
+    
+    to { 
+        transform: translateY(0);
+        //transform: translateY(-40%);  
+    } 
+}
+//apparait de nulle part
+@keyframes menu__item-show { 
+    from {
+        transform: translateX(-9999999px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+// animation pour le prix de
+@keyframes prix { 
+    from {
+        transform:translateX(0);
+    }
+    to {
+        transform:translateX(-180%);
+    }
+}
+
+// animation pour sous titre
+
+@keyframes st-csj {
+    0% {
+        width: 120%;
+    }
+    25% {
+        width:110%;
+        transition-timing-function:cubic-bezier(.4,.1,.6,.9);
+    }
+    50% {
+        width:102%;
+    }
+    75% {
+        width:98%;
+        transition-timing-function:cubic-bezier(.4,.1,.6,.9);
+    }
+    100% {
+        width:94%;
+    }
+}

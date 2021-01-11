@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    &__element{
+        padding: 0.7rem 0rem 0.7rem 0rem;
+        @include medium-tablette {//ipad 10.5
+            padding: 0.7rem 5rem 0.7rem 0rem;
+        }
+        @include big-tablette {
+            padding: 0.7rem 8rem 0.7rem 0rem;
+        }
+        @include laptop-MDPI {
+            padding: 0.7rem 10rem 0.7rem 0rem;
+        }
+        @include laptop-HIDPI {
+            padding: 0.7rem 10rem 0.7rem 0rem;
+        }
+        @include desktop {
+            padding: 0.7rem 11rem 0.7rem 0rem;
+        }
+    }
+    .fa-arrow-left {
+        margin: 0rem 0rem 0rem -2.3rem;
+        color:$color-fleche;
+        @include tablette {//media query
+            font-size: 2rem;
+        }
+        @include desktop {
+            margin: 0rem 0 0rem 11.7rem;
+        }
+    }
+    img {
+        width:50%;
+        height: auto;
+        margin: 0rem 2rem 0rem 0rem;
+        @include tablette {//media query
+            width: 40%;
+        }
+        @include desktop {//media query
+            width: 32%;
+            margin: 0rem 16rem 0rem 0rem;
+        }
+
+    }
+}

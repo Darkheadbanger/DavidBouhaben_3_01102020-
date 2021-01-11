@@ -1,0 +1,41 @@
+@mixin phone {
+    @media only screen and (max-width: map-get($breakpoints, phone-screen)){
+        @content;
+    }
+}
+
+@mixin tablette {
+    @media only screen and (min-width: map-get($breakpoints, tablette-screen)){
+        @content;
+    }
+}// a la fin
+
+@mixin medium-tablette {
+    @media only screen and (min-width: map-get($breakpoints, tablette-screen-medium)){
+        @content;
+    }
+}
+
+@mixin big-tablette {
+    @media only screen and (min-width: map-get($breakpoints, big-tablette-screen)){
+        @content;
+    }
+}
+
+@mixin laptop-MDPI {
+    @media only screen and (min-width: map-get($breakpoints, laptop-MDPI-screen)){
+        @content;
+    }
+}
+
+@mixin laptop-HIDPI {
+    @media only screen and (min-width: map-get($breakpoints, laptop-HIDPI-screen)){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: map-get($breakpoints, desktop-screen)){
+        @content;
+    }
+}

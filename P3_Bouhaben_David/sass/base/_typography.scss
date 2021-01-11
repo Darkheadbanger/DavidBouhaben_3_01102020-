@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+%typographie {
+    @include policeRoboto;
+    font-size: 1.5rem;
+}
+
+h1 {
+    @extend %typographie;
+}
+
+h2 {
+    @extend %typographie;
+}
+
+h3 {
+    @extend %typographie;
+}
+
+h4 {
+    @extend %typographie;
+} /*utilisation d'extension*/

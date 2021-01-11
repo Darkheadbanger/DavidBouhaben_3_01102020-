@@ -1,0 +1,297 @@
+.menu {
+    background-color:$color-seven;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 1rem 0;
+    border-radius: $radius-element $radius-element 0 0;
+    margin: -3rem 0rem 0rem 0rem;
+    a {
+        @include aHyperlien;
+    }
+    @include desktop {
+        border-radius: 0 0 0 0;
+    }
+}
+
+.menue-list-all{
+    background-color:$color-seven;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 1rem 0;
+    border-radius: $radius-element $radius-element 0 0;
+    margin: -3rem 0rem 0rem 0rem;
+    &__animation{
+        animation: menu__up 5s cubic-bezier(.4,.1,.6,.9) both;
+    }
+}
+
+.menu-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    &__element{
+        margin: 1rem 0.8rem 0rem 0rem;
+    }
+    &--typographie {
+        @include titreMenu;
+    }
+    .fa-heart {
+        margin: 0.8rem 0rem 0rem 3rem;
+        color: $color-heart;
+        @include tablette {//media query
+            margin: 0.5rem 3rem 0rem 24rem;
+            font-size: 1.7em;
+        }
+        @include medium-tablette {//media query
+            margin: 0.5rem 3rem 0rem 27.5rem;
+            font-size: 1.7em;
+        }
+        @include big-tablette {//media query
+            margin: 0.5rem 3rem 0rem 40rem;
+        }
+        @include laptop-MDPI{
+            margin: 0.5rem 3rem 0rem -6rem;
+            visibility: hidden;
+        }
+        @include laptop-HIDPI {
+            margin: 0.5rem 3rem 0rem -5rem;
+        }
+        @include desktop {
+            margin: 0.5rem 3rem 0rem -7rem;
+        }
+    }
+}
+
+.epd {
+    align-self: self-start;
+    flex-wrap: wrap;
+    @include laptop-MDPI {
+        align-self: center;
+    }
+    &__element {
+        margin: 2rem 0rem 1rem 1rem;
+        @include desktop {
+            margin: 2rem 0rem 1rem 2.1rem;
+        }
+    }
+    &--typographie {
+        color: $color-epd;
+    }
+    &__trait {
+        border-bottom: 5px solid $color-trait;
+        margin: 0rem 1.8rem 0 0;
+        padding-right: 3rem;
+    }
+    &__trait1 {
+        border-bottom: 5px solid #99e2d0;
+        margin: 0rem 1.8rem 0 0;
+        padding-right: 3rem;
+        @include laptop-MDPI {
+            margin: 0rem 0.8rem 0 0;
+            padding-right: 4rem;
+        }
+    }
+    &__trait3 {
+        border-bottom: 5px solid #99e2d0;
+        margin: 0rem 1.8rem 0 0;
+        padding-right: 3rem;
+        @include laptop-MDPI {
+            margin: 0rem -0.2rem 0 0;
+            padding-right: 4.75rem;
+        }
+    }
+}
+
+.menu-list {
+    background-color:$color-secondary;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include laptop-MDPI {
+        justify-content: center;
+    }
+    &__element {
+        border-radius:$radius-menu;
+        @include margin-div-primary;
+        padding: 0.7rem 1rem 0.7rem 0rem;
+        width:93%;
+        overflow: hidden;
+        position: relative;
+        height: 15.6vw;;
+        @include tablette {//media query
+            width: 96%;
+            height: 7.9vw;
+        }
+        @include medium-tablette {//media query
+            height: 7.35vw;
+        }
+        @include medium-tablette {//media query
+            height: 6.9vw;
+        }
+        @include big-tablette {//media query
+            height: 5.7vw;
+        }
+        @include laptop-MDPI {//media query
+            width: 78%;
+            height: 4.7vw;
+        }
+        @include laptop-HIDPI {//media query
+            width: 69%;
+            height: 4vw;
+        }
+        @include desktop{
+            width: 52%;
+            height: 3.5vw;
+        }
+        .fa-check-circle {
+            visibility:hidden;
+            color: $color-secondary;
+        }
+    }
+    &__column {
+        display: flex;
+        flex-direction: column;
+    }
+    &__box {
+        margin: 0rem 0rem 0rem 0.6rem;
+        @include medium-tablette {//ipad 10.5
+            margin: 0rem 0rem 0rem 0.9rem;
+        }
+    }
+    &--typographie {
+        font-size: 1em;
+        color: $color-primary;
+        font-weight: bold;
+    }
+    .ST {
+        @extend %sous-titre;
+        &--typographie{
+            @extend %sous-titre__typographie;
+        }
+    }
+
+    // pour les sous titres
+    .ST-CSJ {
+        @extend %sous-titre;
+        &--typographie {
+            @extend %sous-titre__typographie;
+        }
+    }
+
+    .prix {
+        margin: -1.2rem 0rem 0rem 18rem;
+        @include tablette {//media query
+            margin: -1.2rem 0rem 0rem 40rem;
+        }
+        @include medium-tablette {//media query
+            margin: -1.2rem 0rem 0rem 44rem;
+        }
+        @include big-tablette {//media query
+            margin: -1.2rem 0rem 0rem 55.5rem;
+        }
+    }
+    &__element:hover{// si on passe le curseur, la coche apparait
+        @include laptop-MDPI {
+            visibility:hidden;
+        }
+        .fa-check-circle {
+            transform: rotateZ(360deg);
+            transition-duration: 900ms;
+            visibility:visible;
+        }
+        
+        .coche {//petit coche avec un check spinner qui apparait si on passe le curseur au dessus du menu
+            background: $color-slide;
+            height: 0vw;
+            padding: 1.65rem 1.5rem 2.5rem 1.5rem;
+            margin: -1rem -1rem 0rem 0rem;
+            border-radius: 0 25px 25px 0;
+            animation: slide 450ms cubic-bezier(.4,.1,.6,.9) both;
+        }
+
+        .prix {
+            animation: prix 460ms cubic-bezier(.4,.1,.6,.9) both;
+        }
+        // a surveiller prix
+        .prix {
+            margin: 0rem 0rem 0rem 18rem;
+            position: absolute;
+            @include tablette {//media query
+                margin: 0rem 0rem 0rem 40rem;
+            }
+            @include medium-tablette {//media query
+                margin: 0rem 0rem 0rem 44rem;
+            }
+            @include big-tablette {//media query
+                margin: 0rem 0rem 0rem 55.5rem;
+            }
+        }
+        //CSJ=Coquilles Saint-Jacques
+        .ST-CSJ {
+            white-space: nowrap;
+            width: 94%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            animation: st-csj 450ms ease-out both;    
+            margin: 0rem -1rem 0rem 0rem;
+        }
+    }
+    
+    &__row {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+    }
+    &__rowST {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        span {
+            justify-self: flex-end;
+        }
+        @include laptop-MDPI {
+            flex-direction: column;
+        }
+    }
+    &--typographiePlus {
+        font-size: 1em;
+        color: $color-primary;
+        font-weight: normal;
+    }
+
+    &--1 {
+        animation: menu__item-show 3000ms cubic-bezier(.4,.1,.6,.9) both;
+    }
+
+    &--11 {
+        animation: menu__item 5s cubic-bezier(.4,.1,.6,.9) both;
+    }
+
+    &--2 {
+        animation: menu__item-show 3170ms cubic-bezier(.4,.1,.6,.9) both;
+    }
+
+    &--22 {
+        animation: menu__item 5.4s cubic-bezier(.4,.1,.6,.9) both;
+    }
+
+    &--3 {
+        animation: menu__item-show 3240ms cubic-bezier(.4,.1,.6,.9) both;
+    }
+    &--33 {
+        animation: menu__item 5.8s cubic-bezier(.4,.1,.6,.9) both;
+    }
+    &--4 {
+        animation: menu__item-show 3310ms cubic-bezier(.4,.1,.6,.9) both;
+    }
+    &--44 {
+        animation: menu__item 6.2s cubic-bezier(.4,.1,.6,.9) both;
+    }
+}
