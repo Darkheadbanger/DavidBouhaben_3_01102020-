@@ -36,7 +36,7 @@
         margin: 2.4rem 0rem 0rem 3rem;
     }
     
-    .round{
+    .round{ 
         @include dot;
         @include tablette {//media query
             width: 2.5vh;
