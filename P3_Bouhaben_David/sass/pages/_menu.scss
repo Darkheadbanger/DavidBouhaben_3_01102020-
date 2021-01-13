@@ -30,6 +30,7 @@
     height: 65vw;
     @include tablette {//media query
         height:65vw;
+        margin: 0rem 0rem 1.5rem 1.6rem;
     }
     @include big-tablette {//
         height: 56vw;

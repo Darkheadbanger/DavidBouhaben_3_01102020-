@@ -852,7 +852,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 93%;
-  margin: 0 0 1.5rem 0;
+  margin: 0rem 0rem 1.5rem 0.7rem;
   padding: 0 0 2rem 0rem;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
   background: white;
@@ -863,6 +863,7 @@ body {
 @media only screen and (min-width: 767px) {
   .menu-bloc {
     height: 65vw;
+    margin: 0rem 0rem 1.5rem 1.6rem;
   }
 }
 @media only screen and (min-width: 992px) {
