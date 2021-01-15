@@ -1,0 +1,117 @@
+.coeur {//animations pour le remplissag du coeur
+    position: relative;
+    height: 50px; 
+    width: 80px;
+    
+    .coeur-plein {
+        font-size: 0;
+        transition-duration: 1000ms;
+        position: absolute;
+        top: 50%;
+        left:60%;
+        transform: translate3d(-50%,-50%,0);
+        color: $color-heart-inside;
+        @include tablette {//media query
+            left: 10%;
+            top: 70%;
+        }
+        @include big-tablette {//
+            left: -10%;
+        }
+        @include desktop {//
+            left: -60%;
+        }
+    }
+    .coeur-vide {
+        position: absolute;
+        top: 50%;
+        left:60%;
+        transform: translate3d(-50%,-50%,0);
+        font-size: 1.33em;
+        color: $color-heart;
+        @include tablette {//media query
+            font-size: 1.8em;
+            left: 10%;
+            top: 70%;
+        }
+        @include big-tablette {// ipad 1.9inch
+            left: -10%;
+            font-size: 2.33em;
+        }
+        @include desktop {// ipad 1.
+            left: -60%;
+        }
+    }
+
+    .coeur-plein1 { //le 1 pour dire que la note ecnhainée est diferrents que les autres
+        font-size: 0;
+        transition-duration: 1000ms;
+        position: absolute;
+        top: 50%;
+        left:80%;
+        transform: translate3d(-50%,-50%,0);
+        color: $color-heart-inside;
+        @include tablette {//media query
+            left: 10%;
+            top: 70%;
+        }
+        @include big-tablette {// ipad 1.9inch
+            left: -10%;
+        }
+        @include desktop {//
+            left: -60%;
+        }
+    }
+    .coeur-vide1 {
+        position: absolute;
+        top: 50%;
+        left:80%;
+        transform: translate3d(-50%,-50%,0);
+        font-size: 1.33em;
+        color: $color-heart;
+        @include tablette {//media query
+            font-size: 1.8em;
+            left: 10%;
+            top: 70%;
+        }
+        @include big-tablette {// ipad 1.9inch
+            left: -10%;
+            font-size: 2.33em;
+        }
+        @include desktop {// ipad
+            left: -60%;
+        }
+    }
+ } 
+ 
+.coeur:hover .coeur-plein {
+    font-size: 1.33rem;
+    @include tablette {//media query
+        font-size: 1.8em;
+        left: 10%;
+        top: 70%;
+    }
+    @include tablette {//media query
+        left: -10%;
+        font-size: 2.33em;
+    }
+    @include desktop {//media query
+        left: -60%;
+    }
+}
+
+.coeur:hover .coeur-plein1 {
+    font-size: 1.33rem;
+    @include tablette {//media query
+        font-size: 1.8em;
+        left: 10%;
+        top: 70%;
+    }
+    @include big-tablette {// ipad 1.9inch
+        left: -10%;
+        font-size: 2.33em;
+    }
+    @include desktop {// ipad
+        left: -60%;
+    }
+}

@@ -1,0 +1,55 @@
+$color-primary: black !default;
+$color-secondary: white !default;
+
+$color-button: #a35bdb;
+$color-button-light: #ec73da;
+$color-dot:#9356dc;
+$color-logo:#7e7e7e;
+$color-nouveaute: #99e2d0;
+$color-nouveaute-text: #098c6c;
+$color-heart:#7d7d7d;
+$color-epd:#484848;
+$color-trait:#99e2d0;
+$color-fleche: #353535;
+$color-spinner: #9555e2;
+$color-heart-inside: #a35bdb;
+$color-slide:#99e2d0;
+
+$color-five: #dfdfdf;
+$color-six: #eaeaea;
+$color-seven: #f6f6f6;
+$color-nine: #616060;
+$color-hover: #99e2d0;
+
+$color-footer: #353535;
+$color-typo-localisation: #3b3b3b;
+$color-shadow: #d3d3d3;
+
+
+$font-tablette: 50%;
+$font-laptop: 56.25%;
+
+$font-primary: normal;
+$font-secondary: italic;
+
+$breakpoints: (
+    "phone-screen": 414px,
+    "tablette-screen": 767px,
+    "tablette-screen-medium": 834px,
+    "big-tablette-screen": 992px,
+    "laptop-MDPI-screen": 1025px,
+    "laptop-HIDPI-screen": 1281px, 
+    "desktop-screen": 1601px
+);
+
+$font-custom: 'Roboto';
+$font-titre: 'Shrikhand';
+
+$radius-button:25px;
+$radius-element: 2rem;
+$radius-restaurant: 15px;
+$radius-menu: 1.1rem;
+
+/* pour la page et spinner*/
+$page-delay: 3s;
+/*fin*/

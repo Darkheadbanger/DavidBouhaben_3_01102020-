@@ -1,0 +1,26 @@
+.heading {
+    width:100%;
+    overflow: hidden;
+    &__element {
+        width:100%;
+        margin: -6rem 0rem 0rem 0rem;
+        @include tablette {//media query
+            margin: -15rem 0rem 0rem 0rem;
+        }
+        @include medium-tablette {//
+            margin: -19rem 0rem 0rem 0rem;
+        }
+        @include big-tablette {//
+            margin: -31rem 0rem 0rem 0rem;
+        }
+        @include laptop-MDPI{ 
+            margin: -37rem 0rem 0rem 0rem;
+        }
+        @include laptop-HIDPI{
+            margin: -43rem 0rem 0rem 0rem;
+        }
+        @include desktop{
+            margin: -49rem 0rem 0rem 0rem;
+        }
+    }
+}

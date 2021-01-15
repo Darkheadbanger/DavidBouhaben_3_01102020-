@@ -1,0 +1,85 @@
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 1rem 0;
+    &__element {
+        @include titre;
+    }
+    a {
+        @include aHyperlien;
+    }
+    @include laptop-MDPI {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+    }
+}
+
+.nav-bar{
+    width: 84%;
+    background-color:$color-seven;
+    border-radius: $radius-element;
+    @include margin-div-primary;
+    padding: 1rem 0rem 1rem 0rem;
+    &--typographie {
+        font-size: 1em;
+        color: $color-primary;
+        margin: 0 0 0 2.5rem;
+    }
+    @include tablette {//media query
+        width: 94%;
+    }
+    @include laptop-MDPI {
+        width: 22%;
+        margin: 2.4rem 0rem 0rem 3rem;
+    }
+    
+    .round{ 
+        @include dot;
+        @include tablette {//media query
+            width: 2.5vh;
+            height: 2.5vh;
+            padding: 4px 0px 0px 8.5px;
+        }
+        @include medium-tablette {// ipad 10.5inch
+            font-size: 1em;
+        }
+        @include big-tablette {//ipad 12,9 inch
+            width: 2vh;
+            height: 2vh;
+            padding: 5px 0px 0px 9.5px;
+        }
+        @include laptop-MDPI {//
+            width: 3.5vh;
+            height: 3.5vh;
+            padding: 6px 0px 0px 9.5px;
+        }
+        @include laptop-HIDPI {//
+            padding: 6px 0px 0px 11.5px;
+        }
+        @include desktop {
+            width: 3.5vh;
+            height: 3.5vh;
+            padding: 8px 0px 0px 11px;
+        }
+    }
+
+    .fas{
+        color: $color-logo;
+        margin: 0rem 1rem 0rem -.5rem;
+        &__element {
+            margin: 0 6px 0 -0.5rem;
+        }
+        @include big-tablette {// ipad
+            font-size: 1.3em;
+        }
+    }
+
+    .fa-mobile-alt {
+        @include tablette { //media query
+            margin: 0rem 1.2rem 0rem 0rem;
+        }
+    }
+}

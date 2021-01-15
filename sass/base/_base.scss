@@ -1,0 +1,31 @@
+#main_wrapper {
+    margin: auto;
+
+}
+
+body {
+    box-sizing: border-box;
+    background-color:$color-secondary;
+    color: $color-primary;
+    @include policeRoboto;
+}
+
+.spinner {
+    /*ajouter pour spinner*/
+    animation: body-all 0ms $page-delay both;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // 10px div by def of 16px
+    @include phone {
+        font-size:100%;
+    }
+}

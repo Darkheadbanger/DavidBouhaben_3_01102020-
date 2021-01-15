@@ -1,0 +1,79 @@
+section {
+    display: flex;
+    flex-direction: column;
+    .section-top {
+        display: flex;
+        flex-direction: column;
+        @include medium-tablette {
+            overflow: hidden;
+        }
+    }
+    img {
+        @include medium-tablette {
+            margin: -3rem 0rem 0rem 0rem;
+        }
+        @include big-tablette {
+            margin: -12rem 0rem 0rem 0rem;
+        }
+        @include laptop-MDPI {
+            margin: -19rem 0rem 0rem 0rem;
+        }
+        @include laptop-HIDPI {
+            margin: -24.5rem 0rem 0rem 0rem;
+        }
+        @include desktop {
+            margin: -6rem 0px 0rem 26rem;
+            width: 53%;
+        }
+    } 
+    .localisation {
+        width:100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content:center;
+        flex-wrap: wrap;
+        background: $color-five;                
+        &__element {
+            padding: 0.5rem 0rem;
+            @include inset-shadow;
+            text-align: center;
+            .fas{
+                color:$color-typo-localisation;
+                margin: 0rem 1rem 0rem -1rem;
+            }
+        }
+        &--typographie{
+            color: $color-typo-localisation;
+            @include big-tablette {
+                font-size: 1.4em;
+            }
+        }
+    }
+    .aside {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+        flex-wrap: wrap;
+        background-color: $color-six;
+        &__menu-element {
+            padding: 1.5rem 3rem 3rem 3rem;
+            text-align: center;
+            font-size: 1.12rem;
+            p {
+                margin: 1rem 0 1.5rem 0;
+                color: $color-nine;
+            }
+            @include laptop-MDPI {
+                padding: 1.5rem 3rem 2rem 3rem;
+            }
+        }
+        &--color{
+            color: $color-primary;
+        }
+    
+    }
+}

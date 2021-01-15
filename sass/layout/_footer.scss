@@ -1,0 +1,71 @@
+.footer {
+    background: $color-footer;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    &__element {
+        margin: 1.5rem 0rem 0rem 0rem;
+        padding: 1rem 0rem 1rem 0rem;
+        a {
+            font-style: $font-primary;
+            color:$color-secondary;
+            text-decoration: none;
+        }
+        span{
+            margin: 0rem 0rem 0.5rem 1rem;
+            font-style: $font-titre;
+            @include tablette {//media query
+                align-self: center;
+            }
+        }
+        .a {
+            margin: 0 0 0.3rem 1.2rem;
+            @include medium-tablette{//ipad 10.5
+                margin: 0 0rem 0.3rem 1rem;
+            }
+            @include big-tablette{//ipad
+                margin: 0px 3rem -1.7rem 0rem;
+            }
+        }
+        .desc-icon {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0 0 0.3rem 0;
+            @include medium-tablette {//ipad 10.5
+                margin: 0 0rem 0.3rem 0rem;
+            }
+            @include big-tablette {//ipad
+                margin: 0px 3rem 0.3rem -1rem;
+            }
+            .parternaire {
+                margin: 0 0 0 -6px;
+            }
+            .fas{
+                color: $color-secondary;
+                margin: 0rem 1rem 0rem 1.2rem;
+            }
+
+        }
+    }
+    &--typographie {
+        color:$color-secondary;
+        font-style: $font-secondary;
+        @include laptop-MDPI {
+            font-size: 1.4em;
+        }
+    } 
+    &--titre {
+        font-family: $font-titre;
+        font-size: 1.4em;
+    }
+    &__row {
+        display: flex;
+        flex-direction: column;
+        @include tablette {//media query
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+    }
+}

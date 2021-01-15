@@ -1,0 +1,11 @@
+%typographie {
+    @include policeRoboto;
+    font-size: 1.5rem;
+}
+// pour le soustitre a gauche du prix
+%sous-titre {
+    padding: 0.1rem 0rem 0rem 0rem;
+}
+%sous-titre__typographie {
+    font-size: 0.9em;
+} 
