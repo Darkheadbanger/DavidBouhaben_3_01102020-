@@ -46,11 +46,11 @@
 }
 @keyframes menu__item {
   from {
-    transform: translateY(20%);
+    transform: translateY(15%);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    opacity: 1;
   }
 }
 @keyframes menu__item-show {
@@ -94,7 +94,8 @@ h4, h3, h2, h1 {
 }
 
 .menu-list .ST-CSJ, .menu-list .ST {
-  padding: 0.1rem 0rem 0rem 0rem;
+  position: absolute;
+  top: 5px;
 }
 
 .menu-list .ST-CSJ--typographie, .menu-list .ST--typographie {
@@ -120,7 +121,7 @@ body {
 
 .spinner {
   /*ajouter pour spinner*/
-  animation: body-all 0ms 3s both;
+  animation: body-all 0ms 2.5s both;
 }
 
 *,
@@ -367,6 +368,18 @@ body {
 .footer--titre {
   font-family: "Shrikhand";
   font-size: 1.4em;
+  position: relative;
+  left: 1rem;
+}
+@media only screen and (min-width: 767px) {
+  .footer--titre {
+    left: 44%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .footer--titre {
+    left: 41%;
+  }
 }
 .footer__row {
   display: flex;
@@ -390,6 +403,8 @@ body {
   margin: 0 0 1rem 0;
   border-radius: 2rem 2rem 0 0;
   margin: -3rem 0rem 0rem 0rem;
+  z-index: 1;
+  position: relative;
 }
 .menu a {
   text-decoration: none;
@@ -494,7 +509,7 @@ body {
 }
 .epd__trait1 {
   border-bottom: 5px solid #99e2d0;
-  margin: 0rem 1.8rem 0 0;
+  margin: 0rem 1.8rem 0rem 0;
   padding-right: 3rem;
 }
 @media only screen and (min-width: 1025px) {
@@ -529,11 +544,10 @@ body {
 .menu-list__element {
   border-radius: 1.1rem;
   margin: 0 0 1.5rem 0;
-  padding: 0.7rem 1rem 0.7rem 0rem;
+  padding: 0.7rem 1rem 0 0rem;
   width: 93%;
   overflow: hidden;
   position: relative;
-  height: 15.6vw;
 }
 @media only screen and (min-width: 767px) {
   .menu-list__element {
@@ -596,7 +610,8 @@ body {
   font-weight: bold;
 }
 .menu-list .prix {
-  margin: -1.2rem 0rem 0rem 18rem;
+  position: absolute;
+  left: 20rem;
 }
 @media only screen and (min-width: 767px) {
   .menu-list .prix {
@@ -613,6 +628,9 @@ body {
     margin: -1.2rem 0rem 0rem 55.5rem;
   }
 }
+.menu-list .coche {
+  padding: 1.65rem 1.5rem 1.4px 1.5rem;
+}
 @media only screen and (min-width: 1025px) {
   .menu-list__element:hover {
     visibility: hidden;
@@ -626,7 +644,7 @@ body {
 .menu-list__element:hover .coche {
   background: #99e2d0;
   height: 0vw;
-  padding: 1.65rem 1.5rem 2.5rem 1.5rem;
+  padding: 1.65rem 1.5rem 2.3rem 1.5rem;
   margin: -1rem -1rem 0rem 0rem;
   border-radius: 0 25px 25px 0;
   animation: slide 450ms cubic-bezier(0.4, 0.1, 0.6, 0.9) both;
@@ -635,7 +653,7 @@ body {
   animation: prix 460ms cubic-bezier(0.4, 0.1, 0.6, 0.9) both;
 }
 .menu-list__element:hover .prix {
-  margin: 0rem 0rem 0rem 18rem;
+  margin: 0rem 0rem 0rem 0;
   position: absolute;
 }
 @media only screen and (min-width: 767px) {
@@ -661,6 +679,11 @@ body {
   animation: st-csj 450ms ease-out both;
   margin: 0rem -1rem 0rem 0rem;
 }
+@media only screen and (min-width: 767px) {
+  .menu-list__element:hover .ST-CSJ {
+    animation: st 0ms;
+  }
+}
 .menu-list__row {
   display: flex;
   flex-wrap: wrap;
@@ -670,6 +693,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
 }
 .menu-list__rowST span {
   justify-self: flex-end;
@@ -685,28 +709,28 @@ body {
   font-weight: normal;
 }
 .menu-list--1 {
-  animation: menu__item-show 3000ms cubic-bezier(0.4, 0.1, 0.6, 0.9) both;
+  animation: menu__item-show 2200ms 2300ms cubic-bezier(0.4, 0.1, 0.6, 0.9) forwards;
 }
 .menu-list--11 {
-  animation: menu__item 5s cubic-bezier(0.4, 0.1, 0.6, 0.9) both;
+  animation: menu__item 2300ms 2350ms cubic-bezier(0.4, 0.1, 0.6, 0.9) both;
 }
 .menu-list--2 {
-  animation: menu__item-show 3170ms cubic-bezier(0.4, 0.1, 0.6, 0.9) both;
+  animation: menu__item-show 2580ms 2630ms cubic-bezier(0.4, 0.1, 0.6, 0.9) forwards;
 }
 .menu-list--22 {
-  animation: menu__item 5.4s cubic-bezier(0.4, 0.1, 0.6, 0.9) both;
+  animation: menu__item 2630ms 2680ms cubic-bezier(0.4, 0.1, 0.6, 0.9) both;
 }
 .menu-list--3 {
-  animation: menu__item-show 3240ms cubic-bezier(0.4, 0.1, 0.6, 0.9) both;
+  animation: menu__item-show 2910ms 2960ms cubic-bezier(0.4, 0.1, 0.6, 0.9) forwards;
 }
 .menu-list--33 {
-  animation: menu__item 5.8s cubic-bezier(0.4, 0.1, 0.6, 0.9) both;
+  animation: menu__item 2960ms 3010ms cubic-bezier(0.4, 0.1, 0.6, 0.9) both;
 }
 .menu-list--4 {
-  animation: menu__item-show 3310ms cubic-bezier(0.4, 0.1, 0.6, 0.9) both;
+  animation: menu__item-show 3240ms 3290ms cubic-bezier(0.4, 0.1, 0.6, 0.9) forwards;
 }
 .menu-list--44 {
-  animation: menu__item 6.2s cubic-bezier(0.4, 0.1, 0.6, 0.9) both;
+  animation: menu__item 3290ms 3340ms cubic-bezier(0.4, 0.1, 0.6, 0.9) both;
 }
 
 .fonctionnement {
@@ -1054,46 +1078,46 @@ body {
   margin: 0.2rem 0rem -0.7rem 0rem;
 }
 
-section {
+aside {
   display: flex;
   flex-direction: column;
 }
-section .section-top {
+aside .section-top {
   display: flex;
   flex-direction: column;
 }
 @media only screen and (min-width: 834px) {
-  section .section-top {
+  aside .section-top {
     overflow: hidden;
   }
 }
 @media only screen and (min-width: 834px) {
-  section img {
+  aside img {
     margin: -3rem 0rem 0rem 0rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  section img {
+  aside img {
     margin: -12rem 0rem 0rem 0rem;
   }
 }
 @media only screen and (min-width: 1025px) {
-  section img {
+  aside img {
     margin: -19rem 0rem 0rem 0rem;
   }
 }
 @media only screen and (min-width: 1281px) {
-  section img {
+  aside img {
     margin: -24.5rem 0rem 0rem 0rem;
   }
 }
 @media only screen and (min-width: 1601px) {
-  section img {
+  aside img {
     margin: -6rem 0px 0rem 26rem;
     width: 53%;
   }
 }
-section .localisation {
+aside .localisation {
   width: 100%;
   height: auto;
   display: flex;
@@ -1103,24 +1127,24 @@ section .localisation {
   flex-wrap: wrap;
   background: #dfdfdf;
 }
-section .localisation__element {
+aside .localisation__element {
   padding: 0.5rem 0rem;
   box-shadow: inset 0 2px 2px #d3d3d3;
   text-align: center;
 }
-section .localisation__element .fas {
+aside .localisation__element .fas {
   color: #3b3b3b;
   margin: 0rem 1rem 0rem -1rem;
 }
-section .localisation--typographie {
+aside .localisation--typographie {
   color: #3b3b3b;
 }
 @media only screen and (min-width: 992px) {
-  section .localisation--typographie {
+  aside .localisation--typographie {
     font-size: 1.4em;
   }
 }
-section .aside {
+aside .aside {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1129,22 +1153,27 @@ section .aside {
   flex-wrap: wrap;
   background-color: #eaeaea;
 }
-section .aside__menu-element {
+aside .aside__menu-element {
   padding: 1.5rem 3rem 3rem 3rem;
   text-align: center;
   font-size: 1.12rem;
 }
-section .aside__menu-element p {
+aside .aside__menu-element p {
   margin: 1rem 0 1.5rem 0;
-  color: #616060;
+  color: black;
 }
 @media only screen and (min-width: 1025px) {
-  section .aside__menu-element {
+  aside .aside__menu-element {
     padding: 1.5rem 3rem 2rem 3rem;
   }
 }
-section .aside--color {
+aside .aside--color {
   color: black;
+}
+aside .aside--typographie {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .header1 {
@@ -1366,52 +1395,50 @@ section .aside--color {
 .menu-title1 {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
 }
 .menu-title1__element {
-  margin: 1rem 1rem 0rem 0rem;
+  /*display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;*/
+  position: relative;
+  top: 14px;
+  right: 59px;
 }
 .menu-title1--typographie {
   font-style: italic;
   font-size: 2em;
 }
 .menu-title1 .fa-heart {
-  margin: 0.8rem 0rem 0rem 6rem;
+  position: relative;
+  top: 29px;
+  left: 45px;
   color: #7d7d7d;
-}
-@media only screen and (min-width: 767px) {
-  .menu-title1 .fa-heart {
-    margin: 0.8rem 3rem 0rem 27.5rem;
-    font-size: 1.7em;
+  /*
+  @include tablette {//media query
+      margin: 0.8rem 3rem 0rem 27.5rem;
+      font-size: 1.7em;
   }
-}
-@media only screen and (min-width: 834px) {
-  .menu-title1 .fa-heart {
-    margin: 0.8rem 3rem 0rem 31.5rem;
-    font-size: 1.7em;
+  @include medium-tablette {//ipad 10.5
+      margin: 0.8rem 3rem 0rem 31.5rem;
+      font-size: 1.7em;
   }
-}
-@media only screen and (min-width: 992px) {
-  .menu-title1 .fa-heart {
-    margin: 0.8rem 3rem 0rem 43rem;
+  @include big-tablette {//ipad
+      margin: 0.8rem 3rem 0rem 43rem;
   }
-}
-@media only screen and (min-width: 1025px) {
-  .menu-title1 .fa-heart {
-    margin: 0.8rem 3rem 0rem -4rem;
-    visibility: hidden;
+  @include laptop-MDPI {
+      margin: 0.8rem 3rem 0rem -4rem;
+      visibility: hidden;
   }
-}
-@media only screen and (min-width: 1281px) {
-  .menu-title1 .fa-heart {
-    margin: 0.8rem 3rem 0rem -7rem;
+  @include laptop-HIDPI {
+      margin: 0.8rem 3rem 0rem -7rem;
   }
-}
-@media only screen and (min-width: 1601px) {
-  .menu-title1 .fa-heart {
-    margin: 0.8rem 3rem 0rem -7rem;
-  }
+  @include desktop{
+      margin: 0.8rem 3rem 0rem -7rem;
+  }*/
 }
 
 /*# sourceMappingURL=style.css.map */

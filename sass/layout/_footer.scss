@@ -58,6 +58,11 @@
     &--titre {
         font-family: $font-titre;
         font-size: 1.4em;
+        position: relative;
+        left: 1rem;
+        @include tablette {//media query
+            left: 44%; 
+        }
     }
     &__row {
         display: flex;

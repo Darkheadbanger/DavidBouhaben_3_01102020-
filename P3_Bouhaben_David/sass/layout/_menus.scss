@@ -8,6 +8,8 @@
     margin: 0 0 1rem 0;
     border-radius: $radius-element $radius-element 0 0;
     margin: -3rem 0rem 0rem 0rem;
+    z-index: 1;
+    position: relative;
     a {
         @include aHyperlien;
     }
@@ -69,6 +71,7 @@
     }
 }
 
+
 .epd {
     align-self: self-start;
     flex-wrap: wrap;
@@ -91,7 +94,7 @@
     }
     &__trait1 {
         border-bottom: 5px solid #99e2d0;
-        margin: 0rem 1.8rem 0 0;
+        margin: 0rem 1.8rem 0rem 0;
         padding-right: 3rem;
         @include laptop-MDPI {
             margin: 0rem 0.8rem 0 0;
@@ -120,11 +123,10 @@
     &__element {
         border-radius:$radius-menu;
         @include margin-div-primary;
-        padding: 0.7rem 1rem 0.7rem 0rem;
+        padding: 0.7rem 1rem 0 0rem;
         width:93%;
         overflow: hidden;
         position: relative;
-        height: 15.6vw;;
         @include tablette {//media query
             width: 96%;
             height: 7.9vw;
@@ -186,7 +188,9 @@
     }
 
     .prix {
-        margin: -1.2rem 0rem 0rem 18rem;
+        //margin: -1.2rem 0rem 0rem 18rem;
+        position: absolute;
+        left: 20rem;
         @include tablette {//media query
             margin: -1.2rem 0rem 0rem 40rem;
         }
@@ -197,6 +201,11 @@
             margin: -1.2rem 0rem 0rem 55.5rem;
         }
     }
+
+    .coche {
+        padding: 1.65rem 1.5rem 1.4px 1.5rem;
+    }
+
     &__element:hover{// si on passe le curseur, la coche apparait
         @include laptop-MDPI {
             visibility:hidden;
@@ -210,7 +219,7 @@
         .coche {//petit coche avec un check spinner qui apparait si on passe le curseur au dessus du menu
             background: $color-slide;
             height: 0vw;
-            padding: 1.65rem 1.5rem 2.5rem 1.5rem;
+            padding: 1.65rem 1.5rem 2.3rem 1.5rem;
             margin: -1rem -1rem 0rem 0rem;
             border-radius: 0 25px 25px 0;
             animation: slide 450ms cubic-bezier(.4,.1,.6,.9) both;
@@ -218,10 +227,11 @@
 
         .prix {
             animation: prix 460ms cubic-bezier(.4,.1,.6,.9) both;
+            
         }
         // a surveiller prix
         .prix {
-            margin: 0rem 0rem 0rem 18rem;
+            margin: 0rem 0rem 0rem 0;
             position: absolute;
             @include tablette {//media query
                 margin: 0rem 0rem 0rem 40rem;
@@ -241,6 +251,9 @@
             text-overflow: ellipsis;
             animation: st-csj 450ms ease-out both;    
             margin: 0rem -1rem 0rem 0rem;
+            @include tablette {//media query
+                animation: st 0ms;
+            }
         }
     }
     
@@ -253,6 +266,7 @@
         display:flex;
         flex-wrap: wrap;
         justify-content:space-between;
+        position: relative;
         span {
             justify-self: flex-end;
         }
@@ -266,32 +280,37 @@
         font-weight: normal;
     }
 
+    
     &--1 {
-        animation: menu__item-show 3000ms cubic-bezier(.4,.1,.6,.9) both;
+        animation: menu__item-show 2200ms 2300ms cubic-bezier(.4,.1,.6,.9) forwards;
     }
 
     &--11 {
-        animation: menu__item 5s cubic-bezier(.4,.1,.6,.9) both;
+        animation: menu__item 2300ms 2350ms cubic-bezier(.4,.1,.6,.9) both;
     }
 
     &--2 {
-        animation: menu__item-show 3170ms cubic-bezier(.4,.1,.6,.9) both;
+        animation: menu__item-show 2580ms 2630ms cubic-bezier(.4,.1,.6,.9) forwards;
     }
 
     &--22 {
-        animation: menu__item 5.4s cubic-bezier(.4,.1,.6,.9) both;
+        animation: menu__item 2630ms 2680ms cubic-bezier(.4,.1,.6,.9) both;
     }
 
     &--3 {
-        animation: menu__item-show 3240ms cubic-bezier(.4,.1,.6,.9) both;
+        animation: menu__item-show 2910ms 2960ms cubic-bezier(.4,.1,.6,.9) forwards;
     }
+
     &--33 {
-        animation: menu__item 5.8s cubic-bezier(.4,.1,.6,.9) both;
+        animation: menu__item 2960ms 3010ms cubic-bezier(.4,.1,.6,.9) both;
     }
+
     &--4 {
-        animation: menu__item-show 3310ms cubic-bezier(.4,.1,.6,.9) both;
+        animation: menu__item-show 3240ms 3290ms cubic-bezier(.4,.1,.6,.9) forwards;
     }
+
     &--44 {
-        animation: menu__item 6.2s cubic-bezier(.4,.1,.6,.9) both;
+        animation: menu__item 3290ms 3340ms cubic-bezier(.4,.1,.6,.9) both;
     }
+
 }

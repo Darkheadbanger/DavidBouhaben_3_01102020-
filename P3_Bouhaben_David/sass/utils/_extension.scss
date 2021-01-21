@@ -4,7 +4,8 @@
 }
 // pour le soustitre a gauche du prix
 %sous-titre {
-    padding: 0.1rem 0rem 0rem 0rem;
+    position: absolute;
+    top: 5px;
 }
 %sous-titre__typographie {
     font-size: 0.9em;
