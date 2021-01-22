@@ -28,4 +28,7 @@ html {
     @include phone {
         font-size:100%;
     }
+    margin:0px;
+    padding:0px;
+    overflow-x: hidden;
 }

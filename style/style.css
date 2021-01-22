@@ -132,6 +132,11 @@ body {
   box-sizing: inherit;
 }
 
+html {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
 @media only screen and (max-width: 414px) {
   html {
     font-size: 100%;
