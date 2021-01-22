@@ -1,6 +1,5 @@
 #main_wrapper {
     margin: auto;
-
 }
 
 body {
@@ -28,4 +27,9 @@ html {
     @include phone {
         font-size:100%;
     }
+    width:100%;
+    height: 100%;
+    margin:0px;
+    padding:0px;
+    overflow-x: hidden;
 }

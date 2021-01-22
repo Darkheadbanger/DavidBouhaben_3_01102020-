@@ -250,12 +250,12 @@ body {
     padding: 0.7rem 8rem 0.7rem 0rem;
   }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .header__element {
     padding: 0.7rem 10rem 0.7rem 0rem;
   }
 }
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1440px) {
   .header__element {
     padding: 0.7rem 10rem 0.7rem 0rem;
   }
@@ -360,7 +360,7 @@ body {
   color: white;
   font-style: italic;
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .footer--typographie {
     font-size: 1.4em;
   }
@@ -488,7 +488,7 @@ body {
     right: 345px;
   }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .menu-title__element {
     right: 0;
   }
@@ -538,13 +538,13 @@ body {
     left: 286px;
   }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .menu-title .fa-heart {
     margin: 0.5rem 3rem 0rem -6rem;
     visibility: hidden;
   }
 }
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1440px) {
   .menu-title .fa-heart {
     margin: 0.5rem 3rem 0rem -5rem;
   }
@@ -559,7 +559,7 @@ body {
   align-self: self-start;
   flex-wrap: wrap;
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .epd {
     align-self: center;
   }
@@ -596,7 +596,7 @@ body {
   margin: 0rem 1.8rem 0rem 0;
   padding-right: 3rem;
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .epd__trait1 {
     margin: 0rem 0.8rem 0 0;
     padding-right: 4rem;
@@ -607,7 +607,7 @@ body {
   margin: 0rem 1.8rem 0 0;
   padding-right: 3rem;
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .epd__trait3 {
     margin: 0rem -0.2rem 0 0;
     padding-right: 4.75rem;
@@ -634,12 +634,12 @@ body {
     width: 96%;
   }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .menu-list__element {
     width: 78%;
   }
 }
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1440px) {
   .menu-list__element {
     width: 69%;
   }
@@ -834,7 +834,7 @@ body {
     padding: 1.65rem 1.5rem 21.55px 1.5rem;
   }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .menu-list .coche {
     padding: 1.65rem 1.5rem 21.4px 1.5rem;
   }
@@ -1024,7 +1024,7 @@ body {
 .menu-list__rowST span {
   justify-self: flex-end;
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .menu-list__rowST {
     flex-direction: column;
   }
@@ -1079,7 +1079,7 @@ body {
   text-decoration: none;
   color: black;
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .fonctionnement {
     display: flex;
     flex-direction: row;
@@ -1104,7 +1104,7 @@ body {
     width: 94%;
   }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .nav-bar {
     width: 22%;
     margin: 2.4rem 0rem 0rem 3rem;
@@ -1142,14 +1142,14 @@ body {
     padding: 5px 0px 0px 9.5px;
   }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .nav-bar .round {
     width: 3.5vh;
     height: 3.5vh;
     padding: 6px 0px 0px 9.5px;
   }
 }
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1440px) {
   .nav-bar .round {
     padding: 6px 0px 0px 11.5px;
   }
@@ -1194,7 +1194,7 @@ body {
 .restaurants-bloc___typographie {
   align-self: flex-start;
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .restaurants-bloc__menu {
     display: flex;
     flex-direction: row;
@@ -1227,14 +1227,14 @@ body {
     height: 56vw;
   }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .menu-bloc {
     height: 36vw;
     width: 50%;
     margin: 0rem 2rem 0rem 0rem;
   }
 }
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1440px) {
   .menu-bloc {
     margin: 0rem 2rem 0rem 0rem;
   }
@@ -1267,14 +1267,14 @@ body {
     margin: -8.5rem 2rem 0rem 0rem;
   }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .menu-bloc__image {
     width: 100%;
     height: 40vw;
     padding: 8.5rem 0rem 0rem 0rem;
   }
 }
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1440px) {
   .menu-bloc__image {
     height: 40vw;
     padding: 8.5rem 0rem 0rem 0rem;
@@ -1305,14 +1305,14 @@ body {
     margin: -24.5rem 3rem 0rem 0rem;
   }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .menu-bloc__images {
     width: 100%;
     height: 60vw;
     padding: 8.5rem 0rem 0rem 0rem;
   }
 }
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1440px) {
   .menu-bloc__images {
     height: 57.8vw;
     padding: 8.5rem 0rem 0rem 0rem;
@@ -1351,13 +1351,13 @@ body {
     right: 10px;
   }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .menu-bloc__element {
     top: 10px;
     right: 10px;
   }
 }
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1440px) {
   .menu-bloc__element {
     top: 10px;
     right: 10px;
@@ -1378,7 +1378,7 @@ body {
     font-size: 1.2em;
   }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .menu-bloc--typographie {
     font-size: 1.4em;
   }
@@ -1432,12 +1432,12 @@ aside .section-top {
     margin: -12rem 0rem 0rem 0rem;
   }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   aside img {
     margin: -19rem 0rem 0rem 0rem;
   }
 }
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1440px) {
   aside img {
     margin: -24.5rem 0rem 0rem 0rem;
   }
@@ -1493,7 +1493,7 @@ aside .aside__menu-element p {
   margin: 1rem 0 1.5rem 0;
   color: black;
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   aside .aside__menu-element {
     padding: 1.5rem 3rem 2rem 3rem;
   }
@@ -1526,7 +1526,7 @@ aside .aside--typographie {
     width: 35%;
   }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .header1 img {
     width: 26%;
   }
@@ -1555,12 +1555,12 @@ aside .aside--typographie {
     margin: -31rem 0rem 0rem 0rem;
   }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .heading__element {
     margin: -37rem 0rem 0rem 0rem;
   }
 }
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1440px) {
   .heading__element {
     margin: -43rem 0rem 0rem 0rem;
   }
@@ -1794,7 +1794,7 @@ aside .aside--typographie {
     right: 23.5rem;
   }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .menu-title1__element {
     right: 0;
   }
@@ -1839,7 +1839,7 @@ aside .aside--typographie {
     left: 19rem;
   }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1280px) {
   .menu-title1 .fa-heart {
     visibility: hidden;
   }
