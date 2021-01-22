@@ -8,6 +8,8 @@
     margin: 0 0 1rem 0;
     border-radius: $radius-element $radius-element 0 0;
     margin: -3rem 0rem 0rem 0rem;
+    z-index: 1;
+    position: relative;
     a {
         @include aHyperlien;
     }
@@ -36,25 +38,72 @@
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
+    position: relative;
     &__element{
-        margin: 1rem 0.8rem 0rem 0rem;
+        position: relative;
+        top: 14px;
+        right: 48px;
+        @include phone384 {
+            right: 34px;
+        }
+        @include phone375 {
+            right: 29px;
+        }
+        @include phone360 {
+            right: 22px;
+        }
+        @include phone320 {
+            right: 4px;
+        }
+        @include tablette600 {
+            right: 134px;
+        }
+        @include tablette{
+            right: 219px;
+        }
+        @include tablette800 {
+            right: 234px;
+        }
+        @include medium-tablette{
+            right: 251px;
+        }
+        @include big-tablette{
+            right: 345px;
+        }
+        @include laptop-MDPI {
+            right: 0;
+        }
     }
+
+
     &--typographie {
         @include titreMenu;
     }
     .fa-heart {
-        margin: 0.8rem 0rem 0rem 3rem;
+        position: relative;
+        top: 27px;
+        left: 39px;
         color: $color-heart;
+        @include phone384{
+            left: 24px;
+        }
+        @include phone360 {
+            left: 11px;
+        }
+        @include phone320 {
+            left: 3px;
+        }
+        @include tablette600{
+            left: 114px;
+        }
         @include tablette {//media query
-            margin: 0.5rem 3rem 0rem 24rem;
-            font-size: 1.7em;
+            left: 188px;
         }
         @include medium-tablette {//media query
-            margin: 0.5rem 3rem 0rem 27.5rem;
-            font-size: 1.7em;
+            left: 201px;
         }
         @include big-tablette {//media query
-            margin: 0.5rem 3rem 0rem 40rem;
+            left: 286px;
         }
         @include laptop-MDPI{
             margin: 0.5rem 3rem 0rem -6rem;
@@ -69,6 +118,7 @@
     }
 }
 
+
 .epd {
     align-self: self-start;
     flex-wrap: wrap;
@@ -79,6 +129,15 @@
         margin: 2rem 0rem 1rem 1rem;
         @include desktop {
             margin: 2rem 0rem 1rem 2.1rem;
+        }
+        //tablette ici {
+        @include tablette600 {
+            position: relative;
+            left: 3px;
+        }
+
+        @include big-tablette {
+            margin: 2rem 0rem 1rem 1.55rem;
         }
     }
     &--typographie {
@@ -91,7 +150,7 @@
     }
     &__trait1 {
         border-bottom: 5px solid #99e2d0;
-        margin: 0rem 1.8rem 0 0;
+        margin: 0rem 1.8rem 0rem 0;
         padding-right: 3rem;
         @include laptop-MDPI {
             margin: 0rem 0.8rem 0 0;
@@ -114,45 +173,37 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    @include laptop-MDPI {
-        justify-content: center;
-    }
+    position: relative;
     &__element {
         border-radius:$radius-menu;
         @include margin-div-primary;
-        padding: 0.7rem 1rem 0.7rem 0rem;
+        padding: 0.7rem 1rem 0 0rem;
         width:93%;
         overflow: hidden;
         position: relative;
-        height: 15.6vw;;
         @include tablette {//media query
             width: 96%;
-            height: 7.9vw;
         }
         @include medium-tablette {//media query
-            height: 7.35vw;
         }
         @include medium-tablette {//media query
-            height: 6.9vw;
         }
         @include big-tablette {//media query
-            height: 5.7vw;
         }
         @include laptop-MDPI {//media query
             width: 78%;
-            height: 4.7vw;
         }
         @include laptop-HIDPI {//media query
             width: 69%;
-            height: 4vw;
         }
         @include desktop{
             width: 52%;
-            height: 3.5vw;
         }
         .fa-check-circle {
             visibility:hidden;
             color: $color-secondary;
+            position: relative;
+            top: 11px;
         }
     }
     &__column {
@@ -169,8 +220,13 @@
         font-size: 1em;
         color: $color-primary;
         font-weight: bold;
+        @include phone320 {
+            font-size: 0.885EM;
+        }
     }
     .ST {
+        /*white-space: nowrap;
+        overflow: visible;*/
         @extend %sous-titre;
         &--typographie{
             @extend %sous-titre__typographie;
@@ -179,59 +235,179 @@
 
     // pour les sous titres
     .ST-CSJ {
+        @include phone375 {
+        white-space: nowrap;
+        overflow: visible;
+        }
+        @include phone384 {
+            white-space: nowrap;
+            overflow: visible;    
+        }
+        @include phone411 {
+            white-space: nowrap;
+            overflow: visible;    
+        }
+        @include phone412 {
+            white-space: nowrap;
+            overflow: visible;    
+        }
+        @include phone {
+            white-space: nowrap;
+            overflow: visible;    
+        }
+
+        @include tablette600 {
+            white-space: nowrap;
+            overflow: visible;
+        }
+
+        @include tablette {
+            white-space: nowrap;
+            overflow: visible;
+        }
+
+        @include tablette800 {
+            white-space: nowrap;
+            overflow: visible;
+        }
+        @include medium-tablette {
+            white-space: nowrap;
+            overflow: visible;
+        }
+
+        @include big-tablette {
+            white-space: nowrap;
+            overflow: visible;
+        }
+
         @extend %sous-titre;
         &--typographie {
             @extend %sous-titre__typographie;
         }
     }
 
-    .prix {
-        margin: -1.2rem 0rem 0rem 18rem;
-        @include tablette {//media query
-            margin: -1.2rem 0rem 0rem 40rem;
+    .ST-RVS {
+        white-space: nowrap;
+        overflow: visible;
+        @extend %sous-titre;
+        &--typographie {
+            @extend %sous-titre__typographie;
         }
-        @include medium-tablette {//media query
-            margin: -1.2rem 0rem 0rem 44rem;
+        @include tablette600{
+            white-space: nowrap;
+            overflow: visible;
         }
-        @include big-tablette {//media query
-            margin: -1.2rem 0rem 0rem 55.5rem;
+        @include tablette{
+            white-space: nowrap;
+            overflow: visible;
+        }
+
+        @include tablette800{
+            white-space: nowrap;
+            overflow: visible;
+        }
+        @include medium-tablette{
+            white-space: nowrap;
+            overflow: visible;
+        }
+        @include big-tablette{
+            white-space: nowrap;
+            overflow: visible;
         }
     }
-    &__element:hover{// si on passe le curseur, la coche apparait
-        @include laptop-MDPI {
-            visibility:hidden;
+
+    .prix {
+        //margin: -1.2rem 0rem 0rem 18rem;
+        position: absolute;
+        left: 20rem;
+        @include phone384 {
+            left: 18.5rem;
         }
+        @include phone375 {
+            left: 18rem;
+        }
+        @include phone360 {
+            left: 17.3rem;
+            top: 4.5px;
+        }
+        @include phone320 {
+            left: 14.8rem;
+            top: 4.3px;
+        }
+        @include tablette600 {
+            left: 31rem;
+        }
+        @include tablette {
+            left: 42.3rem;
+        }
+        @include tablette800 {
+            left: 44.4rem;
+        }
+        @include medium-tablette {//media query
+            left: 46rem;
+        }
+        @include big-tablette {//media query
+            left: 57.4rem;
+        }
+    }
+
+    .coche {
+        padding: 1.65rem 1.5rem 21.4px 1.5rem;
+        @include tablette600 {
+            padding: 1.65rem 1.5rem 21.55px 1.5rem;
+        }
+        @include laptop-MDPI {
+            padding: 1.65rem 1.5rem 21.4px 1.5rem;
+        }
+    }
+
+    &__element:hover{// si on passe le curseur, la coche apparait
         .fa-check-circle {
             transform: rotateZ(360deg);
             transition-duration: 900ms;
             visibility:visible;
+
         }
         
         .coche {//petit coche avec un check spinner qui apparait si on passe le curseur au dessus du menu
             background: $color-slide;
             height: 0vw;
-            padding: 1.65rem 1.5rem 2.5rem 1.5rem;
+            padding: 1.65rem 1.5rem 2.3rem 1.5rem;
             margin: -1rem -1rem 0rem 0rem;
             border-radius: 0 25px 25px 0;
             animation: slide 450ms cubic-bezier(.4,.1,.6,.9) both;
+            @include phone320 {
+                padding: 1.65rem 1.5rem 3.52rem 1.5rem;
+            }
+            @include phone360 {
+                padding: 1.65rem 1.5rem 3.55rem 1.5rem;
+            }
+            @include phone375 {
+                padding: 1.65rem 1.5rem 3.55rem 1.5rem;
+            }
+            @include phone384{
+                padding: 1.65rem 1.5rem 3.55rem 1.5rem;
+            }
+            @include phone412{
+                padding: 1.65rem 1.5rem 3.55rem 1.5rem;
+            }
+            @include phone{
+                padding: 1.65rem 1.5rem 3.5rem 1.5rem;
+            }
+            @include tablette600{
+                padding: 1.65rem 1.5rem 3.5rem 1.5rem;
+            }
         }
 
         .prix {
             animation: prix 460ms cubic-bezier(.4,.1,.6,.9) both;
+
         }
         // a surveiller prix
         .prix {
-            margin: 0rem 0rem 0rem 18rem;
+            margin: 0rem 0rem 0rem 0;
             position: absolute;
-            @include tablette {//media query
-                margin: 0rem 0rem 0rem 40rem;
-            }
-            @include medium-tablette {//media query
-                margin: 0rem 0rem 0rem 44rem;
-            }
-            @include big-tablette {//media query
-                margin: 0rem 0rem 0rem 55.5rem;
-            }
+
         }
         //CSJ=Coquilles Saint-Jacques
         .ST-CSJ {
@@ -241,6 +417,98 @@
             text-overflow: ellipsis;
             animation: st-csj 450ms ease-out both;    
             margin: 0rem -1rem 0rem 0rem;
+            
+            @include phone375 {
+                overflow: visible;
+                text-overflow: visible;
+            }
+            
+            @include phone384 {
+                overflow: visible;
+                text-overflow: visible;    
+            }
+            
+            @include phone411 {
+                overflow: visible;
+                text-overflow: visible;
+            }
+            @include phone412 {
+                overflow: visible;
+                text-overflow: visible;
+            }
+            
+            @include phone {
+                overflow: visible;
+                text-overflow: visible;
+            }
+
+            @include tablette600 {
+                animation: st 0ms;
+                overflow: visible;
+                text-overflow: none;
+            }
+
+            @include tablette {
+                animation: st 0ms;
+                overflow: visible;
+                text-overflow: none;
+            }
+
+            @include tablette800 {
+                animation: st 0ms;
+                overflow: visible;
+                text-overflow: none;
+            }
+
+            @include medium-tablette {
+                animation: st 0ms;
+                overflow: visible;
+                text-overflow: none;
+            }
+
+            @include big-tablette {
+                animation: st 0ms;
+                overflow: visible;
+                text-overflow: none;
+            }
+        }
+        .ST-RVS{
+            white-space: nowrap;
+            width: 94%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            animation: st-csj 450ms ease-out both;    
+            margin: 0rem -1rem 0rem 0rem;
+            @include tablette600 {
+                animation: st 0ms;
+                overflow: visible;
+                text-overflow: none;
+            }
+
+            @include tablette {
+                animation: st 0ms;
+                overflow: visible;
+                text-overflow: none;
+            }
+
+            @include tablette800 {
+                animation: st 0ms;
+                overflow: visible;
+                text-overflow: none;
+            }
+
+            @include medium-tablette {
+                animation: st 0ms;
+                overflow: visible;
+                text-overflow: none;
+            }
+
+            @include big-tablette {
+                animation: st 0ms;
+                overflow: visible;
+                text-overflow: none;
+            }
+            
         }
     }
     
@@ -253,6 +521,7 @@
         display:flex;
         flex-wrap: wrap;
         justify-content:space-between;
+        position: relative;
         span {
             justify-self: flex-end;
         }
@@ -261,37 +530,45 @@
         }
     }
     &--typographiePlus {
-        font-size: 1em;
+        font-size: 0.935em;
         color: $color-primary;
         font-weight: normal;
+        @include tablette {
+            font-size:1em;
+        }
     }
 
+    
     &--1 {
-        animation: menu__item-show 3000ms cubic-bezier(.4,.1,.6,.9) both;
+        animation: menu__item-show 2200ms 2300ms cubic-bezier(.4,.1,.6,.9) forwards;
     }
 
     &--11 {
-        animation: menu__item 5s cubic-bezier(.4,.1,.6,.9) both;
+        animation: menu__item 2300ms 2350ms cubic-bezier(.4,.1,.6,.9) both;
     }
 
     &--2 {
-        animation: menu__item-show 3170ms cubic-bezier(.4,.1,.6,.9) both;
+        animation: menu__item-show 2580ms 2630ms cubic-bezier(.4,.1,.6,.9) forwards;
     }
 
     &--22 {
-        animation: menu__item 5.4s cubic-bezier(.4,.1,.6,.9) both;
+        animation: menu__item 2630ms 2680ms cubic-bezier(.4,.1,.6,.9) both;
     }
 
     &--3 {
-        animation: menu__item-show 3240ms cubic-bezier(.4,.1,.6,.9) both;
+        animation: menu__item-show 2910ms 2960ms cubic-bezier(.4,.1,.6,.9) forwards;
     }
+
     &--33 {
-        animation: menu__item 5.8s cubic-bezier(.4,.1,.6,.9) both;
+        animation: menu__item 2960ms 3010ms cubic-bezier(.4,.1,.6,.9) both;
     }
+
     &--4 {
-        animation: menu__item-show 3310ms cubic-bezier(.4,.1,.6,.9) both;
+        animation: menu__item-show 3240ms 3290ms cubic-bezier(.4,.1,.6,.9) forwards;
     }
+
     &--44 {
-        animation: menu__item 6.2s cubic-bezier(.4,.1,.6,.9) both;
+        animation: menu__item 3290ms 3340ms cubic-bezier(.4,.1,.6,.9) both;
     }
+
 }

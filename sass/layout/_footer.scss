@@ -63,6 +63,9 @@
         @include tablette {//media query
             left: 44%; 
         }
+        @include big-tablette {
+            left: 41%;
+        }
     }
     &__row {
         display: flex;
