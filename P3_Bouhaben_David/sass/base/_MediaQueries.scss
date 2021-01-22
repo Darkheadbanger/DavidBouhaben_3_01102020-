@@ -4,6 +4,42 @@
     }
 }
 
+@mixin phone320 {
+    @media only screen and (max-width: map-get($breakpoints, phone-320)){
+        @content;
+    }
+}
+
+@mixin phone360 {
+    @media only screen and (max-width: map-get($breakpoints, phone-360)){
+        @content;
+    }
+}
+
+@mixin phone375 {
+    @media only screen and (max-width: map-get($breakpoints, phone-375)){
+        @content;
+    }
+}
+
+@mixin phone384 {
+    @media only screen and (max-width: map-get($breakpoints, phone-384)){
+        @content;
+    }
+}
+
+@mixin phone411 {
+    @media only screen and (max-width: map-get($breakpoints, phone-411)){
+        @content;
+    }
+}
+
+@mixin phone412 {
+    @media only screen and (max-width: map-get($breakpoints, phone-412)){
+        @content;
+    }
+}
+
 @mixin tablette {
     @media only screen and (min-width: map-get($breakpoints, tablette-screen)){
         @content;
@@ -21,6 +57,21 @@
         @content;
     }
 }
+
+
+@mixin tablette800 {
+    @media only screen and (min-width: map-get($breakpoints, tablette-800)){
+        @content;
+    }
+}
+
+@mixin tablette600 {
+    @media only screen and (min-width: map-get($breakpoints, tablette-600)){
+        @content;
+    }
+}
+
+
 
 @mixin laptop-MDPI {
     @media only screen and (min-width: map-get($breakpoints, laptop-MDPI-screen)){

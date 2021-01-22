@@ -34,9 +34,19 @@ $font-secondary: italic;
 
 $breakpoints: (
     "phone-screen": 414px,
+    "phone-320": 320px,
+    "phone-360": 360px,
+    "phone-375": 375px,
+    "phone-384": 384px,
+    "phone-411": 411px,
+    "phone-412": 412px,
     "tablette-screen": 767px,
     "tablette-screen-medium": 834px,
     "big-tablette-screen": 992px,
+
+    "tablette-800": 800px,
+    "tablette-600":600px,
+
     "laptop-MDPI-screen": 1025px,
     "laptop-HIDPI-screen": 1281px, 
     "desktop-screen": 1601px

@@ -93,12 +93,12 @@ h4, h3, h2, h1 {
   font-size: 1.5rem;
 }
 
-.menu-list .ST-CSJ, .menu-list .ST {
+.menu-list .ST-RVS, .menu-list .ST-CSJ, .menu-list .ST {
   position: absolute;
   top: 5px;
 }
 
-.menu-list .ST-CSJ--typographie, .menu-list .ST--typographie {
+.menu-list .ST-RVS--typographie, .menu-list .ST-CSJ--typographie, .menu-list .ST--typographie {
   font-size: 0.9em;
 }
 
@@ -436,33 +436,106 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
+  position: relative;
 }
 .menu-title__element {
-  margin: 1rem 0.8rem 0rem 0rem;
+  position: relative;
+  top: 14px;
+  right: 48px;
+}
+@media only screen and (max-width: 384px) {
+  .menu-title__element {
+    right: 34px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .menu-title__element {
+    right: 29px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .menu-title__element {
+    right: 22px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .menu-title__element {
+    right: 4px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .menu-title__element {
+    right: 134px;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .menu-title__element {
+    right: 219px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu-title__element {
+    right: 234px;
+  }
+}
+@media only screen and (min-width: 834px) {
+  .menu-title__element {
+    right: 251px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .menu-title__element {
+    right: 345px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .menu-title__element {
+    right: 0;
+  }
 }
 .menu-title--typographie {
   font-style: italic;
   font-size: 2em;
 }
 .menu-title .fa-heart {
-  margin: 0.8rem 0rem 0rem 3rem;
+  position: relative;
+  top: 27px;
+  left: 39px;
   color: #7d7d7d;
+}
+@media only screen and (max-width: 384px) {
+  .menu-title .fa-heart {
+    left: 24px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .menu-title .fa-heart {
+    left: 11px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .menu-title .fa-heart {
+    left: 3px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .menu-title .fa-heart {
+    left: 114px;
+  }
 }
 @media only screen and (min-width: 767px) {
   .menu-title .fa-heart {
-    margin: 0.5rem 3rem 0rem 24rem;
-    font-size: 1.7em;
+    left: 188px;
   }
 }
 @media only screen and (min-width: 834px) {
   .menu-title .fa-heart {
-    margin: 0.5rem 3rem 0rem 27.5rem;
-    font-size: 1.7em;
+    left: 201px;
   }
 }
 @media only screen and (min-width: 992px) {
   .menu-title .fa-heart {
-    margin: 0.5rem 3rem 0rem 40rem;
+    left: 286px;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -497,6 +570,17 @@ body {
 @media only screen and (min-width: 1601px) {
   .epd__element {
     margin: 2rem 0rem 1rem 2.1rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .epd__element {
+    position: relative;
+    left: 3px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .epd__element {
+    margin: 2rem 0rem 1rem 1.55rem;
   }
 }
 .epd--typographie {
@@ -535,11 +619,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-@media only screen and (min-width: 1025px) {
-  .menu-list {
-    justify-content: center;
-  }
+  position: relative;
 }
 .menu-list__element {
   border-radius: 1.1rem;
@@ -552,45 +632,28 @@ body {
 @media only screen and (min-width: 767px) {
   .menu-list__element {
     width: 96%;
-    height: 7.9vw;
-  }
-}
-@media only screen and (min-width: 834px) {
-  .menu-list__element {
-    height: 7.35vw;
-  }
-}
-@media only screen and (min-width: 834px) {
-  .menu-list__element {
-    height: 6.9vw;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .menu-list__element {
-    height: 5.7vw;
   }
 }
 @media only screen and (min-width: 1025px) {
   .menu-list__element {
     width: 78%;
-    height: 4.7vw;
   }
 }
 @media only screen and (min-width: 1281px) {
   .menu-list__element {
     width: 69%;
-    height: 4vw;
   }
 }
 @media only screen and (min-width: 1601px) {
   .menu-list__element {
     width: 52%;
-    height: 3.5vw;
   }
 }
 .menu-list__element .fa-check-circle {
   visibility: hidden;
   color: white;
+  position: relative;
+  top: 11px;
 }
 .menu-list__column {
   display: flex;
@@ -609,31 +672,171 @@ body {
   color: black;
   font-weight: bold;
 }
+@media only screen and (max-width: 320px) {
+  .menu-list--typographie {
+    font-size: 0.885EM;
+  }
+}
+.menu-list .ST {
+  /*white-space: nowrap;
+  overflow: visible;*/
+}
+@media only screen and (max-width: 375px) {
+  .menu-list .ST-CSJ {
+    white-space: nowrap;
+    overflow: visible;
+  }
+}
+@media only screen and (max-width: 384px) {
+  .menu-list .ST-CSJ {
+    white-space: nowrap;
+    overflow: visible;
+  }
+}
+@media only screen and (max-width: 411px) {
+  .menu-list .ST-CSJ {
+    white-space: nowrap;
+    overflow: visible;
+  }
+}
+@media only screen and (max-width: 412px) {
+  .menu-list .ST-CSJ {
+    white-space: nowrap;
+    overflow: visible;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .menu-list .ST-CSJ {
+    white-space: nowrap;
+    overflow: visible;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .menu-list .ST-CSJ {
+    white-space: nowrap;
+    overflow: visible;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .menu-list .ST-CSJ {
+    white-space: nowrap;
+    overflow: visible;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu-list .ST-CSJ {
+    white-space: nowrap;
+    overflow: visible;
+  }
+}
+@media only screen and (min-width: 834px) {
+  .menu-list .ST-CSJ {
+    white-space: nowrap;
+    overflow: visible;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .menu-list .ST-CSJ {
+    white-space: nowrap;
+    overflow: visible;
+  }
+}
+.menu-list .ST-RVS {
+  white-space: nowrap;
+  overflow: visible;
+}
+@media only screen and (min-width: 600px) {
+  .menu-list .ST-RVS {
+    white-space: nowrap;
+    overflow: visible;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .menu-list .ST-RVS {
+    white-space: nowrap;
+    overflow: visible;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu-list .ST-RVS {
+    white-space: nowrap;
+    overflow: visible;
+  }
+}
+@media only screen and (min-width: 834px) {
+  .menu-list .ST-RVS {
+    white-space: nowrap;
+    overflow: visible;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .menu-list .ST-RVS {
+    white-space: nowrap;
+    overflow: visible;
+  }
+}
 .menu-list .prix {
   position: absolute;
   left: 20rem;
 }
+@media only screen and (max-width: 384px) {
+  .menu-list .prix {
+    left: 18.5rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .menu-list .prix {
+    left: 18rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .menu-list .prix {
+    left: 17.3rem;
+    top: 4.5px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .menu-list .prix {
+    left: 14.8rem;
+    top: 4.3px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .menu-list .prix {
+    left: 31rem;
+  }
+}
 @media only screen and (min-width: 767px) {
   .menu-list .prix {
-    margin: -1.2rem 0rem 0rem 40rem;
+    left: 42.3rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu-list .prix {
+    left: 44.4rem;
   }
 }
 @media only screen and (min-width: 834px) {
   .menu-list .prix {
-    margin: -1.2rem 0rem 0rem 44rem;
+    left: 46rem;
   }
 }
 @media only screen and (min-width: 992px) {
   .menu-list .prix {
-    margin: -1.2rem 0rem 0rem 55.5rem;
+    left: 57.4rem;
   }
 }
 .menu-list .coche {
-  padding: 1.65rem 1.5rem 1.4px 1.5rem;
+  padding: 1.65rem 1.5rem 21.4px 1.5rem;
+}
+@media only screen and (min-width: 600px) {
+  .menu-list .coche {
+    padding: 1.65rem 1.5rem 21.55px 1.5rem;
+  }
 }
 @media only screen and (min-width: 1025px) {
-  .menu-list__element:hover {
-    visibility: hidden;
+  .menu-list .coche {
+    padding: 1.65rem 1.5rem 21.4px 1.5rem;
   }
 }
 .menu-list__element:hover .fa-check-circle {
@@ -649,27 +852,47 @@ body {
   border-radius: 0 25px 25px 0;
   animation: slide 450ms cubic-bezier(0.4, 0.1, 0.6, 0.9) both;
 }
+@media only screen and (max-width: 320px) {
+  .menu-list__element:hover .coche {
+    padding: 1.65rem 1.5rem 3.52rem 1.5rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .menu-list__element:hover .coche {
+    padding: 1.65rem 1.5rem 3.55rem 1.5rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .menu-list__element:hover .coche {
+    padding: 1.65rem 1.5rem 3.55rem 1.5rem;
+  }
+}
+@media only screen and (max-width: 384px) {
+  .menu-list__element:hover .coche {
+    padding: 1.65rem 1.5rem 3.55rem 1.5rem;
+  }
+}
+@media only screen and (max-width: 412px) {
+  .menu-list__element:hover .coche {
+    padding: 1.65rem 1.5rem 3.55rem 1.5rem;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .menu-list__element:hover .coche {
+    padding: 1.65rem 1.5rem 3.5rem 1.5rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .menu-list__element:hover .coche {
+    padding: 1.65rem 1.5rem 3.5rem 1.5rem;
+  }
+}
 .menu-list__element:hover .prix {
   animation: prix 460ms cubic-bezier(0.4, 0.1, 0.6, 0.9) both;
 }
 .menu-list__element:hover .prix {
   margin: 0rem 0rem 0rem 0;
   position: absolute;
-}
-@media only screen and (min-width: 767px) {
-  .menu-list__element:hover .prix {
-    margin: 0rem 0rem 0rem 40rem;
-  }
-}
-@media only screen and (min-width: 834px) {
-  .menu-list__element:hover .prix {
-    margin: 0rem 0rem 0rem 44rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .menu-list__element:hover .prix {
-    margin: 0rem 0rem 0rem 55.5rem;
-  }
 }
 .menu-list__element:hover .ST-CSJ {
   white-space: nowrap;
@@ -679,9 +902,112 @@ body {
   animation: st-csj 450ms ease-out both;
   margin: 0rem -1rem 0rem 0rem;
 }
+@media only screen and (max-width: 375px) {
+  .menu-list__element:hover .ST-CSJ {
+    overflow: visible;
+    text-overflow: visible;
+  }
+}
+@media only screen and (max-width: 384px) {
+  .menu-list__element:hover .ST-CSJ {
+    overflow: visible;
+    text-overflow: visible;
+  }
+}
+@media only screen and (max-width: 411px) {
+  .menu-list__element:hover .ST-CSJ {
+    overflow: visible;
+    text-overflow: visible;
+  }
+}
+@media only screen and (max-width: 412px) {
+  .menu-list__element:hover .ST-CSJ {
+    overflow: visible;
+    text-overflow: visible;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .menu-list__element:hover .ST-CSJ {
+    overflow: visible;
+    text-overflow: visible;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .menu-list__element:hover .ST-CSJ {
+    animation: st 0ms;
+    overflow: visible;
+    text-overflow: none;
+  }
+}
 @media only screen and (min-width: 767px) {
   .menu-list__element:hover .ST-CSJ {
     animation: st 0ms;
+    overflow: visible;
+    text-overflow: none;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu-list__element:hover .ST-CSJ {
+    animation: st 0ms;
+    overflow: visible;
+    text-overflow: none;
+  }
+}
+@media only screen and (min-width: 834px) {
+  .menu-list__element:hover .ST-CSJ {
+    animation: st 0ms;
+    overflow: visible;
+    text-overflow: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .menu-list__element:hover .ST-CSJ {
+    animation: st 0ms;
+    overflow: visible;
+    text-overflow: none;
+  }
+}
+.menu-list__element:hover .ST-RVS {
+  white-space: nowrap;
+  width: 94%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  animation: st-csj 450ms ease-out both;
+  margin: 0rem -1rem 0rem 0rem;
+}
+@media only screen and (min-width: 600px) {
+  .menu-list__element:hover .ST-RVS {
+    animation: st 0ms;
+    overflow: visible;
+    text-overflow: none;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .menu-list__element:hover .ST-RVS {
+    animation: st 0ms;
+    overflow: visible;
+    text-overflow: none;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu-list__element:hover .ST-RVS {
+    animation: st 0ms;
+    overflow: visible;
+    text-overflow: none;
+  }
+}
+@media only screen and (min-width: 834px) {
+  .menu-list__element:hover .ST-RVS {
+    animation: st 0ms;
+    overflow: visible;
+    text-overflow: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .menu-list__element:hover .ST-RVS {
+    animation: st 0ms;
+    overflow: visible;
+    text-overflow: none;
   }
 }
 .menu-list__row {
@@ -704,9 +1030,14 @@ body {
   }
 }
 .menu-list--typographiePlus {
-  font-size: 1em;
+  font-size: 0.935em;
   color: black;
   font-weight: normal;
+}
+@media only screen and (min-width: 767px) {
+  .menu-list--typographiePlus {
+    font-size: 1em;
+  }
 }
 .menu-list--1 {
   animation: menu__item-show 2200ms 2300ms cubic-bezier(0.4, 0.1, 0.6, 0.9) forwards;
@@ -1408,6 +1739,66 @@ aside .aside--typographie {
   top: 14px;
   right: 59px;
 }
+@media only screen and (max-width: 414px) {
+  .menu-title1__element {
+    right: 78px;
+  }
+}
+@media only screen and (max-width: 411px) {
+  .menu-title1__element {
+    right: 77px;
+  }
+}
+@media only screen and (max-width: 384px) {
+  .menu-title1__element {
+    right: 63px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .menu-title1__element {
+    right: 58px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .menu-title1__element {
+    right: 52px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .menu-title1__element {
+    right: 33px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .menu-title1__element {
+    right: 10.6rem;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .menu-title1__element {
+    right: 15.9rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu-title1__element {
+    right: 17rem;
+  }
+}
+@media only screen and (min-width: 834px) {
+  .menu-title1__element {
+    right: 18rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .menu-title1__element {
+    right: 23.5rem;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .menu-title1__element {
+    right: 0;
+  }
+}
 .menu-title1--typographie {
   font-style: italic;
   font-size: 2em;
@@ -1417,28 +1808,41 @@ aside .aside--typographie {
   top: 29px;
   left: 45px;
   color: #7d7d7d;
-  /*
-  @include tablette {//media query
-      margin: 0.8rem 3rem 0rem 27.5rem;
-      font-size: 1.7em;
+}
+@media only screen and (max-width: 320px) {
+  .menu-title1 .fa-heart {
+    left: 17px;
   }
-  @include medium-tablette {//ipad 10.5
-      margin: 0.8rem 3rem 0rem 31.5rem;
-      font-size: 1.7em;
+}
+@media only screen and (max-width: 360px) {
+  .menu-title1 .fa-heart {
+    left: 33px;
   }
-  @include big-tablette {//ipad
-      margin: 0.8rem 3rem 0rem 43rem;
+}
+@media only screen and (min-width: 600px) {
+  .menu-title1 .fa-heart {
+    left: 9rem;
   }
-  @include laptop-MDPI {
-      margin: 0.8rem 3rem 0rem -4rem;
-      visibility: hidden;
+}
+@media only screen and (min-width: 767px) {
+  .menu-title1 .fa-heart {
+    left: 13rem;
   }
-  @include laptop-HIDPI {
-      margin: 0.8rem 3rem 0rem -7rem;
+}
+@media only screen and (min-width: 800px) {
+  .menu-title1 .fa-heart {
+    left: 13.5rem;
   }
-  @include desktop{
-      margin: 0.8rem 3rem 0rem -7rem;
-  }*/
+}
+@media only screen and (min-width: 992px) {
+  .menu-title1 .fa-heart {
+    left: 19rem;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .menu-title1 .fa-heart {
+    visibility: hidden;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
